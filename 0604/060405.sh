@@ -16,12 +16,14 @@ do
         1)
             git add -i
             git log --oneline
+            ;;
         # git commit 選択
         2)
             echo -n 'comment: '
             read commit
             git comment -m "$comment"
             git log --oneline
+            ;;
         # git push 選択
         3)
             git push
